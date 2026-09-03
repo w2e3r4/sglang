@@ -68,14 +68,13 @@ class TestTritonDeterministic(TestDeterministicBase):
     # Test with triton attention backend
     @classmethod
     def get_server_args(cls):
-        args = COMMON_SERVER_ARGS
-        args.extend(
-            [
-                "--attention-backend",
-                "triton",
-            ]
-        )
-        return args
+        # Deterministic inference must override even an explicit Lean request.
+        return [
+            *COMMON_SERVER_ARGS,
+            "--attention-backend",
+            "triton",
+            "--enable-lean-attention",
+        ]
 
 
 @unittest.skipUnless(_is_xpu, "XPU runner only")
