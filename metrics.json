@@ -1,0 +1,284 @@
+{
+  "runs": {
+    "C_base_nospec": {
+      "commit": "297e54fd105e974cdf401e5b4d20253a22c16f90",
+      "config": "FA3+FP8KV+DP8 attn, no spec (reference)",
+      "dataset": "gsm8k test (1319, sgl-eval 0.1.3 vendored NeMo-Skills prompt, 0-shot chat)",
+      "total": 1319,
+      "correct": 1261,
+      "accuracy": 0.956027,
+      "failed_or_empty": 0,
+      "truncated": 7,
+      "parse_failed": 0,
+      "latency_seconds": 241.4,
+      "gen": {
+        "chat_template_kwargs": null,
+        "extra_body": null,
+        "max_tokens": 2048,
+        "min_p": 0.0,
+        "reasoning_effort": null,
+        "repetition_penalty": 1.0,
+        "seed": 0,
+        "system_message": null,
+        "temperature": 0.0,
+        "top_p": 1.0
+      },
+      "num_threads": 256,
+      "sgl_eval_run_dir": "predictions/C_base_nospec/sgl_eval_gsm8k_20261113-234203"
+    },
+    "BD_fix_spec": {
+      "commit": "73c772de7e0fc2a3e8c02c71b6a3c147620d044d",
+      "config": "FA3+FP8KV+DP8 attn+EAGLE3 (problem config)",
+      "dataset": "gsm8k test (1319, sgl-eval 0.1.3 vendored NeMo-Skills prompt, 0-shot chat)",
+      "total": 1319,
+      "correct": 1264,
+      "accuracy": 0.958302,
+      "failed_or_empty": 0,
+      "truncated": 5,
+      "parse_failed": 0,
+      "latency_seconds": 91.2,
+      "gen": {
+        "chat_template_kwargs": null,
+        "extra_body": null,
+        "max_tokens": 2048,
+        "min_p": 0.0,
+        "reasoning_effort": null,
+        "repetition_penalty": 1.0,
+        "seed": 0,
+        "system_message": null,
+        "temperature": 0.0,
+        "top_p": 1.0
+      },
+      "num_threads": 256,
+      "sgl_eval_run_dir": "predictions/BD_fix_spec/sgl_eval_gsm8k_20261113-233043"
+    },
+    "E_fix_nospec": {
+      "commit": "73c772de7e0fc2a3e8c02c71b6a3c147620d044d",
+      "config": "FA3+FP8KV+DP8 attn, no spec",
+      "dataset": "gsm8k test (1319, sgl-eval 0.1.3 vendored NeMo-Skills prompt, 0-shot chat)",
+      "total": 1319,
+      "correct": 1264,
+      "accuracy": 0.958302,
+      "failed_or_empty": 0,
+      "truncated": 10,
+      "parse_failed": 0,
+      "latency_seconds": 255.1,
+      "gen": {
+        "chat_template_kwargs": null,
+        "extra_body": null,
+        "max_tokens": 2048,
+        "min_p": 0.0,
+        "reasoning_effort": null,
+        "repetition_penalty": 1.0,
+        "seed": 0,
+        "system_message": null,
+        "temperature": 0.0,
+        "top_p": 1.0
+      },
+      "num_threads": 256,
+      "sgl_eval_run_dir": "predictions/E_fix_nospec/sgl_eval_gsm8k_20261113-235125"
+    },
+    "BD_fix_spec_repeat": {
+      "commit": "73c772de7e0fc2a3e8c02c71b6a3c147620d044d",
+      "config": "FA3+FP8KV+DP8 attn+EAGLE3 (problem config), repeat run",
+      "dataset": "gsm8k test (1319, sgl-eval 0.1.3 vendored NeMo-Skills prompt, 0-shot chat)",
+      "total": 1319,
+      "correct": 1263,
+      "accuracy": 0.957544,
+      "failed_or_empty": 0,
+      "truncated": 7,
+      "parse_failed": 0,
+      "latency_seconds": 106.7,
+      "gen": {
+        "chat_template_kwargs": null,
+        "extra_body": null,
+        "max_tokens": 2048,
+        "min_p": 0.0,
+        "reasoning_effort": null,
+        "repetition_penalty": 1.0,
+        "seed": 0,
+        "system_message": null,
+        "temperature": 0.0,
+        "top_p": 1.0
+      },
+      "num_threads": 256,
+      "sgl_eval_run_dir": "predictions/BD_fix_spec_repeat/sgl_eval_gsm8k_20261114-000838"
+    },
+    "E2_base_spec_nodp": {
+      "commit": "297e54fd105e974cdf401e5b4d20253a22c16f90",
+      "config": "FA3+FP8KV+EAGLE3, attention TP8 (no DP attn)",
+      "dataset": "gsm8k test (1319, sgl-eval 0.1.3 vendored NeMo-Skills prompt, 0-shot chat)",
+      "total": 1319,
+      "correct": 1263,
+      "accuracy": 0.957544,
+      "failed_or_empty": 0,
+      "truncated": 8,
+      "parse_failed": 0,
+      "latency_seconds": 128.9,
+      "gen": {
+        "chat_template_kwargs": null,
+        "extra_body": null,
+        "max_tokens": 2048,
+        "min_p": 0.0,
+        "reasoning_effort": null,
+        "repetition_penalty": 1.0,
+        "seed": 0,
+        "system_message": null,
+        "temperature": 0.0,
+        "top_p": 1.0
+      },
+      "num_threads": 256,
+      "sgl_eval_run_dir": "predictions/E2_base_spec_nodp/sgl_eval_gsm8k_20261113-235842"
+    },
+    "E2_fix_spec_nodp": {
+      "commit": "73c772de7e0fc2a3e8c02c71b6a3c147620d044d",
+      "config": "FA3+FP8KV+EAGLE3, attention TP8 (no DP attn)",
+      "dataset": "gsm8k test (1319, sgl-eval 0.1.3 vendored NeMo-Skills prompt, 0-shot chat)",
+      "total": 1319,
+      "correct": 1263,
+      "accuracy": 0.957544,
+      "failed_or_empty": 0,
+      "truncated": 5,
+      "parse_failed": 0,
+      "latency_seconds": 122.4,
+      "gen": {
+        "chat_template_kwargs": null,
+        "extra_body": null,
+        "max_tokens": 2048,
+        "min_p": 0.0,
+        "reasoning_effort": null,
+        "repetition_penalty": 1.0,
+        "seed": 0,
+        "system_message": null,
+        "temperature": 0.0,
+        "top_p": 1.0
+      },
+      "num_threads": 256,
+      "sgl_eval_run_dir": "predictions/E2_fix_spec_nodp/sgl_eval_gsm8k_20261114-000340"
+    }
+  },
+  "comparisons": [
+    {
+      "reference": "C_base_nospec",
+      "compared": "BD_fix_spec",
+      "n": 1319,
+      "delta_pp": 0.227,
+      "both_correct": 1256,
+      "both_wrong": 50,
+      "ref_correct_cmp_wrong": [
+        "gsm8k-353",
+        "gsm8k-590",
+        "gsm8k-754",
+        "gsm8k-796",
+        "gsm8k-990"
+      ],
+      "ref_wrong_cmp_correct": [
+        "gsm8k-159",
+        "gsm8k-241",
+        "gsm8k-288",
+        "gsm8k-340",
+        "gsm8k-505",
+        "gsm8k-635",
+        "gsm8k-894",
+        "gsm8k-1192"
+      ],
+      "identical_text": 324
+    },
+    {
+      "reference": "C_base_nospec",
+      "compared": "E_fix_nospec",
+      "n": 1319,
+      "delta_pp": 0.227,
+      "both_correct": 1257,
+      "both_wrong": 51,
+      "ref_correct_cmp_wrong": [
+        "gsm8k-353",
+        "gsm8k-590",
+        "gsm8k-796",
+        "gsm8k-990"
+      ],
+      "ref_wrong_cmp_correct": [
+        "gsm8k-37",
+        "gsm8k-241",
+        "gsm8k-505",
+        "gsm8k-552",
+        "gsm8k-635",
+        "gsm8k-641",
+        "gsm8k-1046"
+      ],
+      "identical_text": 469
+    },
+    {
+      "reference": "E2_base_spec_nodp",
+      "compared": "E2_fix_spec_nodp",
+      "n": 1319,
+      "delta_pp": 0.0,
+      "both_correct": 1257,
+      "both_wrong": 50,
+      "ref_correct_cmp_wrong": [
+        "gsm8k-37",
+        "gsm8k-241",
+        "gsm8k-340",
+        "gsm8k-423",
+        "gsm8k-1046",
+        "gsm8k-1192"
+      ],
+      "ref_wrong_cmp_correct": [
+        "gsm8k-159",
+        "gsm8k-494",
+        "gsm8k-505",
+        "gsm8k-635",
+        "gsm8k-1119",
+        "gsm8k-1226"
+      ],
+      "identical_text": 560
+    },
+    {
+      "reference": "E_fix_nospec",
+      "compared": "BD_fix_spec",
+      "n": 1319,
+      "delta_pp": 0.0,
+      "both_correct": 1259,
+      "both_wrong": 50,
+      "ref_correct_cmp_wrong": [
+        "gsm8k-37",
+        "gsm8k-552",
+        "gsm8k-641",
+        "gsm8k-754",
+        "gsm8k-1046"
+      ],
+      "ref_wrong_cmp_correct": [
+        "gsm8k-159",
+        "gsm8k-288",
+        "gsm8k-340",
+        "gsm8k-894",
+        "gsm8k-1192"
+      ],
+      "identical_text": 332
+    },
+    {
+      "reference": "BD_fix_spec",
+      "compared": "BD_fix_spec_repeat",
+      "n": 1319,
+      "delta_pp": -0.076,
+      "both_correct": 1259,
+      "both_wrong": 51,
+      "ref_correct_cmp_wrong": [
+        "gsm8k-288",
+        "gsm8k-340",
+        "gsm8k-494",
+        "gsm8k-858",
+        "gsm8k-1017"
+      ],
+      "ref_wrong_cmp_correct": [
+        "gsm8k-353",
+        "gsm8k-510",
+        "gsm8k-675",
+        "gsm8k-1046"
+      ],
+      "identical_text": 329
+    }
+  ],
+  "source_note": "GPU results are for release/v0.5.23 plus public_fix.diff, not PR head or current main.",
+  "tested_patch_sha256": "2ba3b2d6737b108f80c2c129c740e9f6fc1b92db204221ab381e7f3d88f7b928"
+}
